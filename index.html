@@ -3,30 +3,13 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>LINE友だち追加 | キレイレポオンライン</title>
-<meta name="description" content="キレイレポオンラインの公式LINEを友だち追加。オンライン医療ダイエット相談の予約はLINEから。初回カウンセリング無料。" />
+<title>LINE友だち追加 | Kireireport Online</title>
+<meta name="description" content="Kireireport Onlineの公式LINEを友だち追加。新商品・お得な情報をLINEでお届けします。" />
 <meta name="robots" content="noindex, nofollow" />
-<meta property="og:title" content="LINE友だち追加 | キレイレポオンライン" />
-<meta property="og:description" content="公式LINEを友だち追加して、医師へのオンライン相談をはじめましょう。" />
+<meta property="og:title" content="LINE友だち追加 | Kireireport Online" />
+<meta property="og:description" content="公式LINEを友だち追加して、新商品・お得な情報を受け取りましょう。" />
 <meta property="og:type" content="website" />
 <meta property="og:locale" content="ja_JP" />
-
-<!-- ===== Meta Pixel ===== -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '4301712340144106');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=4301712340144106&ev=PageView&noscript=1"/></noscript>
-<!-- ===== /Meta Pixel ===== -->
 
 <style>
   :root{
@@ -83,68 +66,23 @@ src="https://www.facebook.com/tr?id=4301712340144106&ev=PageView&noscript=1"/></
 </head>
 <body>
   <div class="wrap">
-    <div class="logo">キレイレポオンライン</div>
+    <div class="logo">Kireireport Online</div>
 
     <div class="hero">
-      <span class="badge">初回オンラインカウンセリング無料</span>
-      <h1>まずは<span class="em">公式LINE</span>で<br>友だち追加</h1>
-      <p class="lead">提携医療機関の医師にオンラインで相談。<br>予約・お薬の受け取りまでスマホで完結します。</p>
+      <span class="badge">公式LINE</span>
+      <h1><span class="em">公式LINE</span>で<br>友だち追加</h1>
+      <p class="lead">新商品・お得な情報をLINEでお届けします。</p>
 
-      <a id="lineCta" class="cta" href="https://lin.ee/NJjGKkZ" rel="nofollow">
+      <a id="lineCta" class="cta" href="https://lin.ee/x6jRGEG" rel="nofollow">
         <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
           <path d="M12 2C6.48 2 2 5.69 2 10.23c0 4.07 3.56 7.48 8.37 8.13.33.07.77.22.88.5.1.26.07.66.03.92l-.14.86c-.04.26-.2 1.01.89.55s5.86-3.45 7.99-5.9C21.61 13.7 22 12.02 22 10.23 22 5.69 17.52 2 12 2z"/>
         </svg>
         LINEで友だち追加する
       </a>
-      <p class="cta-note">所要1分・無料 / ボタンからLINEアプリが開きます</p>
+      <p class="cta-note">所要1分 / ボタンからLINEアプリが開きます</p>
     </div>
 
-    <div class="steps">
-      <h2>ご利用の流れ</h2>
-      <div class="step"><span class="num">1</span><span class="txt"><b>LINEで友だち追加</b><br>このページのボタンから登録。</span></div>
-      <div class="step"><span class="num">2</span><span class="txt"><b>無料カウンセリング予約</b><br>ご都合の良い時間をLINEから選択。</span></div>
-      <div class="step"><span class="num">3</span><span class="txt"><b>医師がオンラインで相談</b><br>体調・生活習慣・ご希望をお伺いします。</span></div>
-      <div class="step"><span class="num">4</span><span class="txt"><b>ご納得いただけたら開始</b><br>ご希望に沿えない場合の費用は発生しません。</span></div>
-    </div>
-
-    <p class="trust">
-      提携医療機関（マーチクリニック）の医師がオンライン診察を担当します。<br>
-      強引な勧誘はいたしません。個人情報は厳重に管理します。
-    </p>
-
-    <p class="foot">© キレイレポオンライン</p>
+    <p class="foot">© Kireireport Online</p>
   </div>
-
-<script>
-(function () {
-  var cta = document.getElementById('lineCta');
-  var LINE_URL = cta.getAttribute('href');
-  var redirected = false;
-
-  function go() {
-    if (redirected) return;
-    redirected = true;
-    window.location.href = LINE_URL;
-  }
-
-  cta.addEventListener('click', function (e) {
-    e.preventDefault();
-    // カスタムCVイベント発火（Metaイベントマネージャーでカスタムコンバージョン化）
-    try {
-      if (window.fbq) {
-        fbq('trackCustom', 'LINEFriendAdd');
-        fbq('track', 'Lead');           // 標準Leadも併発火（最適化用）
-      }
-    } catch (err) {}
-    // イベント送信完了後に遷移（送信前に離脱しないよう保険でタイマー）
-    if (window.fbq) {
-      fbq('track', 'Lead', {}, { eventCallback: go });
-      setTimeout(go, 600);
-    } else {
-      go();
-    }
-  });
-})();
-</script>
 </body>
 </html>
